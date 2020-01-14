@@ -30,9 +30,15 @@
             
             $('#led-on').click(function() {
 		    // {led: "ON"}を送信
+		    ledRef.add({
+                            led: "ON"
+                    });
             });
             $('#led-off').click(function() {
 		    // {led: "OFF"}を送信
+		    ledRef.add({
+                            led: "OFF"
+                    });
             });
 
         </script>
